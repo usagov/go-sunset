@@ -1,0 +1,142 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+
+body {
+  @include u-text("primary-darker");
+}
+h1 {
+  @include u-text("primary-darker");
+  @include u-margin-bottom(1);
+  @include u-font-family("serif");
+}
+h2 {
+  @include u-margin-bottom(1);
+}
+
+li {
+  @include u-margin-top(2);
+}
+
+li p {
+  @include u-margin-top(0);
+}
+
+a:visited {
+  color: "#783CB9";
+}
+
+.usa-alert__heading {
+  @include u-font-size("heading", "2xl");
+}
+.usa-alert__text {
+  @include u-font-size("body", "lg");
+}
+.usa-site-alert--emergency .usa-alert:before {
+  @include u-margin-top(1);
+}
+
+.title-class {
+  @include u-margin-top(4);
+}
+
+.usa-collection__item,
+.usa-list li,
+.usa-prose .usa-collection__item,
+.usa-prose > ol li,
+.usa-prose > ul li,
+ol li,
+ul li {
+  max-width: none;
+}
+p {
+  max-width: none;
+}
+
+.cards {
+  @include u-border-top(1);
+  @include u-border-top("primary-darker");
+}
+
+.usa-card {
+  @include u-margin-top(0);
+  border-radius: 0px;
+}
+
+.usa-card__img,
+.usa-card__container {
+  border-radius: 0px;
+}
+
+.usa-footer__return-to-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.usa-footer__primary-section {
+  background-color: #dfe1e2;
+}
+
+.usa-footer__primary-content {
+  @include u-margin-top(0);
+  @include u-margin-bottom(0);
+  @include u-padding-top(1);
+  @include u-padding-bottom(1);
+}
+
+.usa-identifier {
+  background-color: #112f4e;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .ftr-list {
+    padding-top: 1.2rem;
+  }
+}
+
+#backToTop.stuck {
+  right: 0;
+}
+
+#backToTop {
+  z-index: 2000000003;
+  position: fixed;
+  bottom: 80px;
+  height: 50px;
+  width: 90px;
+  right: -100px;
+
+  background: #e8f0f7;
+  transition: right 0.5s;
+
+  background-size: 45px;
+  background-position: 2px;
+  background-image: url("/../assets/imgs/Icon_Back_to_Top_Blue.png");
+  background-repeat: no-repeat;
+  padding: 0 0 0 45px;
+  border-radius: 25px 0 0 25px;
+  line-height: 50px;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+}
