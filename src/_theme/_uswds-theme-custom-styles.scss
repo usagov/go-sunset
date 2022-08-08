@@ -19,7 +19,7 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
-
+@use "uswds-core" as *;
 body {
   @include u-text("primary-darker");
 }
