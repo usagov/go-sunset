@@ -1,3 +1,27 @@
-$theme-show-notifications: false;
-// changed theme-color-emergency: "red-warm-60v" to theme-color-emergency: "red-50";
-$theme-color-emergency: "red-50";
+@use "uswds-core" with (
+  $theme-show-notifications: false,
+  // changed theme-color-emergency: "red-warm-60v" to theme-color-emergency: "red-50";
+  $theme-color-emergency: "red-50",
+  $theme-font-role-heading: "serif",
+
+  $utilities-use-important: true,
+  $output-these-utilities: (
+    "background-color",
+    "color",
+    "display",
+    "margin",
+    "padding",
+    "text-decoration-color",
+  ),
+  $color-settings: (
+    "output": true,
+    "responsive": true,
+    "active": true,
+    "focus": true,
+    "hover": true,
+    "visited": true,
+  ),
+  $color-palettes: (
+    "palette-color-theme",
+  )
+);
