@@ -19,7 +19,7 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
-
+@use "uswds-core" as *;
 body {
   @include u-text("primary-darker");
 }
@@ -44,8 +44,9 @@ li p {
   @include u-margin-top(0);
 }
 
-a:visited {
-  color: "#783CB9";
+a:visited,
+usa-footer__primary-link:visited {
+  color: #783cb9;
 }
 
 .usa-alert__heading {
@@ -135,7 +136,7 @@ p {
 
   background-size: 45px;
   background-position: 2px;
-  background-image: url("/../assets/imgs/Icon_Back_to_Top_Blue.png");
+  background-image: url("../../../assets/imgs/Icon_Back_to_Top_Blue.png");
   background-repeat: no-repeat;
   padding: 0 0 0 45px;
   border-radius: 25px 0 0 25px;
