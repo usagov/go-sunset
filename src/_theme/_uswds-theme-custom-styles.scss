@@ -79,6 +79,7 @@ p {
 .cards {
   @include u-border-top(1);
   @include u-border-top("primary-darker");
+  padding-top: 0.5rem;
 }
 
 .usa-card {
